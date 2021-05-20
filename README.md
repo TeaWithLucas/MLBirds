@@ -10,16 +10,18 @@ The goal of this task is to develop an algorithm to learn to classify images con
 
 add this to import the data info for bounding_boxes, classes, image_class_labels, images, train_test_split, attributes, certainties, class_attribute_labels_continuous, image_attribute_labels, part_click_locs, part_locs & parts
 
-`git_fldr = '/content/MLBirds/'
-
-if os.path.exists(git_fldr):
-  %cd '/content/MLBirds/'
-  !git pull
-else:
-  !git clone https://github.com/TeaWithLucas/MLBirds.git
-  %cd '/content/MLBirds/'
-
-import data_load as data`
+```
+git_fldr = '/content/MLBirds/'
+  
+  if os.path.exists(git_fldr):
+    %cd '/content/MLBirds/'
+    !git pull
+  else:
+    !git clone https://github.com/TeaWithLucas/MLBirds.git
+    %cd '/content/MLBirds/
+    
+  import data_load as data
+```
 
 # The Caltech-UCSD Birds-200-2011 Dataset
 
